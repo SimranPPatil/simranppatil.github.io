@@ -3,9 +3,14 @@ body{
 	font-family: 'Shadows Into Light Two', cursive;
 	font-weight: bold;
 	font-size: 20px;
-	height: 400px;
+	height: 0px;
 	color:#6b2a4e;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-   	background-image: url('ocean.jpg');
+}
+
+html { 
+  background: url('ocean.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
