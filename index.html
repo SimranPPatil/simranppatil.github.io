@@ -1,79 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE Html>
+<html >
 <head>
-
-<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="template.js"></script>
-
+<title> HOME </title>
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+<link rel="stylesheet"  href="custom.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="type.js"></script>
 </head>
+
 <body>
-<!--
-<div class="rows">
-
-  <div class="col-md-3">
-    <h4>Class Notes</h4>
+<section id="myImg" class="overlay" style="background-image: url(Altgeld.jpg)">
+</section>
+<div id="Intro" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  	<div class="row">
+	  	<div class="col-sm-6" id="firsttext">
+			<span id="type"></span>
+			<span id="cursor">|</span>	
+		</div>
+		<div class="col-sm-6">
+			<img id="introimg" src="louvre.jpg">
+			<img id="introimg2" src="stamp.png">
+		</div>
+	</div>
   </div>
-
-  <div class="col-md-3">
-    <h4>Inquisitive Inquiry</h4>
-  </div>
-
-  <div class="col-md-3">
-    <h4>Ideation Solution</h4>
-  </div>
-
-  <div class="col-md-3">
-    <h4>Wisdom and Reflection</h4>
-  </div>
-
 </div>
--->
-<div class="row">
-	<ul class="nav nav-pills">
-	
-		<li><a href="classnotes.html">Into the Classroom</a></li>
-		<li><a href="questions.html">Inquisitive Inquiry</a></li>
-		<li><a href="solutions.html">Ideation Solution</a></li>
-		<li><a href="wisdom.html">Wisdom and Reflection</a></li>
-    <li><a href="reserve.html">Rustic Reserves</a></li>
-    
+<!-- after intro screen-->
+<section>
+	<div class="content">
+		<div class="parallax">
+			<ul class="fly-in hidden">
+				<li> W</li>
+				<li> E</li>
+				<li> L</li>
+				<li> C</li>
+				<li> O</li>
+				<li> M</li>
+				<li> E</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+	$(function(){
+		$(document).on('scroll', function(){
+			var currY = $(document).scrollTop();
+			console.log('scr' + currY);
+			$('div.parallax').css('background-position', '0' + -currY/3 + 'px' );
+		})
+	})();
 
-	</ul>
-</div>
 
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Creativity, Innovation and Vision</h1>
-      </div>
-    </div> 
-
-	
-
-
-
-	  <div class="container">
-		<div class="row">
-			<img src="me.jpg" alt="me" align="right">	
-			<div class="intro">
-   			 <p> 	Author: Simran Patil
-   			 		<br>
-    				NetID: sppatil2
-    				<br>
-    				SPRING 2016
-    		</p>
-		  </div> 
-	    </div>
-	  </div>
-	
-  </body>
-</html>
+</script>	
 </body>
 </html>
