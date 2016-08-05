@@ -95,12 +95,12 @@ body{
 
 .content{
   height: 1200px;
-  background: #333;
+  background: url('floral.jpg');
 }
 
 .parallax{
   padding: 20rem 0;
-  background: url('UIUC.jpg');
+  background: url('bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   -webkit-transition: all 0.2s ease;
@@ -123,7 +123,7 @@ body{
 .fly-in li{
   display: inline-block;
   font-size: 3rem;
-  margin-right:50px;
+  margin-right:30px;
   font-weight: 300; 
   opacity: 1;
   transition: all 2.5s ease;
