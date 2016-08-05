@@ -21,7 +21,7 @@ function imageRotator(array){
 		}
 		else
 			i=0; //reset
-	}, 2000);
+	}, 1500);
 };
 
 function openNav() {
@@ -60,7 +60,7 @@ function typewriter(string){
 }
 
 var main = function(){
-	var gallery = [ "UIUC.jpg", "union.jpg", "Altgeld.jpg", "eceb.jpeg"];
+	var gallery = [ "UIUC.jpg", "union.jpg", "Altgeld.jpg"];
 	$("#starters").hide();
 	imageRotator(gallery);
 	typewriter("Hi there! Welcome Aboard! I'm Simran Patil");
